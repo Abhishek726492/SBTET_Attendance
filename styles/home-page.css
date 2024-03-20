@@ -1,0 +1,199 @@
+body {
+  font-family: "Mulish", sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  place-items: center;
+  height: 75vh;
+  margin: 0;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(249, 249, 249);
+  border: 1px solid rgb(206, 206, 206);
+  padding: 10px 40px;
+}
+.left-section,
+.middle-section,
+.right-section {
+  display: flex;
+}
+.left-section {
+  align-items: center;
+}
+.middle-section {
+  justify-content: space-around;
+}
+.right-section {
+  align-items: center;
+}
+.middle-1,
+.middle-2 {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-logo {
+  height: 100px;
+  margin-right: 20px;
+}
+.img-sec-chair {
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid rgb(172, 172, 172);
+  
+}
+.heading,
+.heading-place {
+  color: rgb(9, 64, 136);
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.heading-place{
+  font-size: 19px;
+}
+.text-sec-chair {
+  text-align: center;
+  color: rgb(9, 64, 136);
+  font-weight: 800;
+}
+.address,
+.address-value,
+.mobile-app {
+  color: rgb(9, 64, 136);
+  font-weight: 800;
+}
+.mobile-app {
+  text-decoration: none;
+  cursor: pointer;
+  color:rgb(35, 153, 221);
+}
+.address {
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+.address-value {
+  margin-bottom: 15px;
+}
+
+.content {
+  background-color: rgba(104, 185, 239, 0.719);
+  box-shadow: 1px 1px 20px 7px rgba(0,0,0,0.3);
+  padding: 50px;
+  border: none;
+  border-radius: 20px;
+}
+.options {
+  
+  font-size: 30px;
+  color: rgb(9, 64, 136);
+  font-weight: 1000;
+}
+.options-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.view,
+.mark {
+  min-height: 230px;
+  background-color: rgb(30, 193, 217);
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  border:  none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.6);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px;
+  transition: opacity 0.15s;
+}
+.view {
+  background-image: url(../Photos/view_attendance.jpg);
+  background-size: cover;
+  background-position: start;
+  color: black;
+}
+.mark {
+  background-image: url(../Photos/biometric.jpg);
+  background-size: cover;
+  background-position: start;
+}
+.view:hover,
+.mark:hover {
+  opacity: 0.7;
+  box-shadow: none;
+}
+.view:active,
+.mark:active {
+  opacity: 0.3;
+}
+
+.footer {
+  height: 20%;
+  background-color: rgb(5, 102, 168);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px 50px;
+  border: 1px solid rgb(172, 172, 172);
+  color: rgb(203, 203, 203);
+  height: max-content;
+}
+.contact {
+  color: white;
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.email,
+.phone {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.details {
+  color: rgb(201, 201, 201);
+  font-weight: 900;
+}
+.my-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+.official-link {
+  color: rgb(107, 231, 198);
+  font-size: 20px;
+  font-weight: 900
+}
+@media (min-width: 750px) and (max-width: 1000px) {
+  .header {
+    grid-template-columns: 1fr 1fr;
+  }
+  .address-value {
+    margin: 0;
+  }
+  .address {
+    margin-bottom: 0;
+  }
+}
+@media (max-height: 999px) {
+  .content {
+    margin: 5% 0;
+  }
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 93.4%;
+  }
+}
